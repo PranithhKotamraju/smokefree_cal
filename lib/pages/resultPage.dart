@@ -3,12 +3,13 @@ import 'package:smokefree_cal/components/constants.dart';
 import 'package:smokefree_cal/components/reusable_card.dart';
 import 'package:smokefree_cal/pages/input_page.dart';
 
-class ResultPage extends StatefulWidget {
-  @override
-  _ResultPageState createState() => _ResultPageState();
-}
 
-class _ResultPageState extends State<ResultPage> {
+class ResultPage extends StatelessWidget {
+  ResultPage({  @required  this.weekResult,  @required this.monthResult,  @required this.yearResult});
+  final String weekResult;
+  final String monthResult;
+  final String yearResult;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,9 +41,12 @@ class _ResultPageState extends State<ResultPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    // Text(resultText.toUpperCase(),style: kResultTextStyle),
-                    // Text(bmiResult,style: kNumberTextStyle),
-                    // Text(interpretation.toUpperCase(),style: kLabelTextStyle),
+                    Text("Your Savings Per Week is",style: kAppBarTextStyle,),
+                    Text(weekResult,style: kNumberTextStyle,),
+                    Text("Your Savings Per Month is",style: kAppBarTextStyle,),
+                    Text(monthResult,style: kNumberTextStyle,),
+                    Text("Your Savings Per Year is",style: kAppBarTextStyle,),
+                    Text(yearResult,style: kNumberTextStyle,),
 
 
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smokefree_cal/brainpage.dart';
 import 'package:smokefree_cal/components/constants.dart';
 import 'package:smokefree_cal/components/reusable_card.dart';
 import 'package:smokefree_cal/components/roundicon_button.dart';
@@ -181,8 +182,16 @@ class _InputPageState extends State<InputPage> {
               ),
               BottomButton(text: 'GENERATE THE SAVINGS',
               onTap:(){
+
+
+                Brain brain = new Brain(avgCig: avgCig,cigPackCost: cigCost, cigInPack: ciginPack);
+
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => ResultPage()));
+                    MaterialPageRoute(builder: (context) => ResultPage(
+                      weekResult: brain.savingInWeek(),
+                    monthResult: brain.savingInMonth(),
+                      yearResult: brain.savingInYear(),
+                    )));
               }
               ),
             ],
