@@ -17,4 +17,9 @@ const kNumberTextStyle = TextStyle(
 
 const kResultTextStyle = TextStyle(
 
-  color: Color(0XFFE8AC52),fontSize: 40,fontWeight: FontWeight.normal,);
+  color: Color(0XFF07540C),fontSize: 30,fontWeight: FontWeight.normal,);
+
+
+const kSavingTextStyle = TextStyle(
+
+  color: Color(0XFF2F7FAD),fontSize: 30,fontWeight: FontWeight.bold ,);

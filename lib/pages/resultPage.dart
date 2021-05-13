@@ -32,45 +32,63 @@ class ResultPage extends StatelessWidget {
                 padding: EdgeInsets.all(15),
                 alignment: Alignment.bottomLeft,
                 child: Text(
-                  "Your Savings",
-                  style: kNumberTextStyle,
+                  "IF YOU QUIT SMOKING TODAY",
+                  style: kAppBarTextStyle,
                 ),
+
               ),
             ),
             Expanded(
               flex: 5,
               child: ReusableCard(
-                colour: Color(0XFF122223),
+                colour: Color(0XFFFFFFFF),
                 widget: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                  //
-                  // Expanded(child: Image.asset("lib/images/cig1.jpeg")),
 
-                    Text("Your Savings Per Week ",style: kAppBarTextStyle,),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(weekResult ,style: kResultTextStyle,),
-                        Text('\$' ,style: kResultTextStyle,),
-                      ],
+                  Expanded(
+                      flex: 4,
+                      child: Image.asset("lib/images/cig1.jpeg")),
+
+                    Expanded(
+                        flex: 1,
+                        child: Text("Your Savings Per Week ",style: kSavingTextStyle,)),
+                    Expanded(
+                      flex: 1,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(weekResult ,style: kResultTextStyle,),
+                          Text('\$' ,style: kResultTextStyle,),
+                        ],
+                      ),
                     ),
-                    Text("Your Savings Per Month ",style: kAppBarTextStyle,),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(monthResult ,style: kResultTextStyle,),
-                        Text('\$' ,style: kResultTextStyle,),
-                      ],
+                    Expanded(
+                        flex: 1,
+                        child: Text("Your Savings Per Month ",style: kSavingTextStyle,)),
+                    Expanded(
+                      flex: 1,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(monthResult ,style: kResultTextStyle,),
+                          Text('\$' ,style: kResultTextStyle,),
+                        ],
+                      ),
                     ),
-                    Text("Your Savings Per Year ",style: kAppBarTextStyle,),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(yearResult ,style: kResultTextStyle,),
-                        Text('\$' ,style: kResultTextStyle,),
-                      ],
+                    Expanded(
+                        flex: 1,
+                        child: Text("Your Savings Per Year ",style: kSavingTextStyle,)),
+                    Expanded(
+                      flex: 1,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(yearResult ,style: kResultTextStyle,),
+                          Text('\$' ,style:kResultTextStyle ),
+                        ],
+                      ),
                     ),
 
 
