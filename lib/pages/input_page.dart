@@ -180,7 +180,7 @@ class _InputPageState extends State<InputPage> {
                   colour: Colors.redAccent.shade200,
                 ),
               ),
-              BottomButton(text: 'GENERATE THE SAVINGS',
+              BottomButton(text: ' GENERATE SAVINGS',
               onTap:(){
 
 

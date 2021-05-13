@@ -41,7 +41,8 @@ class ResultPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text("Your Savings Per Week is",style: kAppBarTextStyle,),
+
+                    Text("Your Savings Per Week are",style: kAppBarTextStyle,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -49,7 +50,7 @@ class ResultPage extends StatelessWidget {
                         Text('\$' ,style: kResultTextStyle,),
                       ],
                     ),
-                    Text("Your Savings Per Month is",style: kAppBarTextStyle,),
+                    Text("Your Savings Per Month are",style: kAppBarTextStyle,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -57,7 +58,7 @@ class ResultPage extends StatelessWidget {
                         Text('\$' ,style: kResultTextStyle,),
                       ],
                     ),
-                    Text("Your Savings Per Year is",style: kAppBarTextStyle,),
+                    Text("Your Savings Per Year are",style: kAppBarTextStyle,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
