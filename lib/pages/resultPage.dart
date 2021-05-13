@@ -36,17 +36,35 @@ class ResultPage extends StatelessWidget {
             Expanded(
               flex: 5,
               child: ReusableCard(
-                colour: Color(0XFF123123),
+                colour: Color(0XFF122223),
                 widget: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text("Your Savings Per Week is",style: kAppBarTextStyle,),
-                    Text(weekResult,style: kNumberTextStyle,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(weekResult ,style: kResultTextStyle,),
+                        Text('\$' ,style: kResultTextStyle,),
+                      ],
+                    ),
                     Text("Your Savings Per Month is",style: kAppBarTextStyle,),
-                    Text(monthResult,style: kNumberTextStyle,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(monthResult ,style: kResultTextStyle,),
+                        Text('\$' ,style: kResultTextStyle,),
+                      ],
+                    ),
                     Text("Your Savings Per Year is",style: kAppBarTextStyle,),
-                    Text(yearResult,style: kNumberTextStyle,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(yearResult ,style: kResultTextStyle,),
+                        Text('\$' ,style: kResultTextStyle,),
+                      ],
+                    ),
 
 
 

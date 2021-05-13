@@ -14,3 +14,7 @@ const kBottomButtonTextStyle = TextStyle(
 const kNumberTextStyle = TextStyle(
 
   color: Color(0XFFFDFDFD),fontSize: 47,fontWeight: FontWeight.normal,);
+
+const kResultTextStyle = TextStyle(
+
+  color: Color(0XFFE8AC52),fontSize: 40,fontWeight: FontWeight.normal,);
