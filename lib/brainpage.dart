@@ -1,11 +1,10 @@
-
 import 'package:flutter/material.dart';
 
 import 'dart:math';
-class Brain{
 
+class Brain {
   final int avgCig;
-  final int  cigPackCost;
+  final int cigPackCost;
 
   final int cigInPack;
   double _cost;
@@ -17,34 +16,27 @@ class Brain{
 
   Brain({this.avgCig, this.cigPackCost, this.cigInPack});
 
-  String savingInWeek(){
-
+  String savingInWeek() {
     _cost = (avgCig / cigInPack) * cigPackCost;
 
-    _weeklySavings = ((_cost*7)*100)/100;
+    _weeklySavings = _cost * 7;
 
     return _weeklySavings.toStringAsFixed(1);
-
   }
 
-  String savingInMonth(){
-
+  String savingInMonth() {
     _cost = (avgCig / cigInPack) * cigPackCost;
 
-    _monthlySavings = ((_cost*30)*100)/100;
+    _monthlySavings = _cost * 30;
 
     return _monthlySavings.toStringAsFixed(1);
-
   }
-  String savingInYear(){
 
+  String savingInYear() {
     _cost = (avgCig / cigInPack) * cigPackCost;
 
-    _yearlySavings = ((_cost*365)*100)/100;
+    _yearlySavings = _cost * 365;
 
     return _yearlySavings.toStringAsFixed(1);
-
   }
-
-
 }

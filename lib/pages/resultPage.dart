@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:smokefree_cal/components/constants.dart';
 import 'package:smokefree_cal/components/reusable_card.dart';
@@ -25,6 +26,9 @@ class ResultPage extends StatelessWidget {
           children: [
             Expanded(
               child: Container(
+
+
+
                 padding: EdgeInsets.all(15),
                 alignment: Alignment.bottomLeft,
                 child: Text(
@@ -41,8 +45,10 @@ class ResultPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                  //
+                  // Expanded(child: Image.asset("lib/images/cig1.jpeg")),
 
-                    Text("Your Savings Per Week are",style: kAppBarTextStyle,),
+                    Text("Your Savings Per Week ",style: kAppBarTextStyle,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -50,7 +56,7 @@ class ResultPage extends StatelessWidget {
                         Text('\$' ,style: kResultTextStyle,),
                       ],
                     ),
-                    Text("Your Savings Per Month are",style: kAppBarTextStyle,),
+                    Text("Your Savings Per Month ",style: kAppBarTextStyle,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -58,7 +64,7 @@ class ResultPage extends StatelessWidget {
                         Text('\$' ,style: kResultTextStyle,),
                       ],
                     ),
-                    Text("Your Savings Per Year are",style: kAppBarTextStyle,),
+                    Text("Your Savings Per Year ",style: kAppBarTextStyle,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
