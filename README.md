@@ -3,8 +3,7 @@
 A new Flutter application.
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
+SmokeFree Cal is an Application that estimates your savings weekly, monthly, and yearly if you quit smoking from today. It inspires smokers to quit smoking by using our beautiful User Interface.
 
 A few resources to get you started if this is your first Flutter project:
 
